@@ -1,0 +1,4 @@
+admin/
+frontend/public/foto-review/
+backend/uploads/
+*.env
