@@ -126,10 +126,11 @@ const Contatti = () => {
         <header className="text-center mb-16 animate-fade-up">
           <h1 className="text-section-title mb-6">Contattami</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Se senti che &egrave; il momento di iniziare un percorso o vuoi semplicemente avere pi&ugrave; informazioni, puoi scrivermi qui.
+            Se senti che è il momento di iniziare un percorso o vuoi semplicemente
+            avere più informazioni, puoi scrivermi qui.
           </p>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-3">
-            Ti risponder&ograve; personalmente.
+            Ti risponderò personalmente.
           </p>
         </header>
 
@@ -140,7 +141,8 @@ const Contatti = () => {
               <div className="mb-8">
                 <h2 className="text-card-title mb-4">Scrivimi</h2>
                 <p className="text-muted-foreground">
-                  Il primo messaggio non deve essere &ldquo;perfetto&rdquo;. Pu&ograve; essere anche solo una sensazione, una domanda o un dubbio.
+                  Il primo messaggio non deve essere "perfetto".
+                  Può essere anche solo una sensazione, una domanda o un dubbio.
                 </p>
                 <p className="text-muted-foreground mt-3">
                   Ogni percorso inizia da qui.
@@ -242,13 +244,9 @@ const Contatti = () => {
                   {isSubmitting ? "Invio in corso..." : "Invia Richiesta"}
                 </Button>
 
-                <p className="text-sm text-muted-foreground text-center">
-                  Mi prender&ograve; cura della tua richiesta e ti risponder&ograve; personalmente. Di solito rispondo entro 24&ndash;48 ore.
-                </p>
-
                 <p className="text-xs text-muted-foreground text-center">
-                  Compilando questo modulo accetti che i tuoi dati vengano trattati
-                  secondo la nostra privacy policy per fini di contatto professionale.
+                  Compilando questo modulo accetti il trattamento dei dati personali
+                  secondo la normativa vigente, esclusivamente per finalità di contatto professionale.
                 </p>
               </form>
             </CardContent>
@@ -256,18 +254,28 @@ const Contatti = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
+            <div className="animate-fade-up mb-8">
+              <img
+                src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_88.jpg"
+                alt="Valentina Rita Andolfi"
+                className="w-full max-h-64 object-cover rounded-2xl shadow-md"
+              />
+            </div>
             {/* Contatto diretto */}
             <Card className="animate-fade-up bg-gradient-hero">
               <CardContent className="p-8 text-center">
-                <h3 className="text-card-title mb-4">Preferisci un contatto pi&ugrave; diretto?</h3>
+                <h3 className="text-card-title mb-4">Preferisci un contatto più diretto?</h3>
+                <p className="text-muted-foreground mb-4 italic">
+                  Puoi scrivermi anche solo per capire se questo percorso è adatto a te.
+                </p>
                 <p className="text-muted-foreground mb-2">
                   WhatsApp: 346 6051282
                 </p>
-                <p className="text-sm text-muted-foreground mb-4 italic">
-                  (Puoi scrivermi anche solo per capire se questo percorso &egrave; adatto a te.)
-                </p>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-4">
                   Email: info@valentinaandolfi.it
+                </p>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Di solito rispondo entro 24–48 ore.
                 </p>
                 <div className="space-y-3">
                   <Button asChild className="w-full btn-primary">

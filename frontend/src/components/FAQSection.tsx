@@ -37,7 +37,7 @@ const faqs: FAQ[] = [
   },
   {
     question: "Come faccio a capire se la terapia fa per me?",
-    answer: "Il primo colloquio è proprio lo spazio per capirlo insieme. Non è un impegno: è un'occasione per raccontare cosa stai vivendo, fare domande e vedere se ti senti a tuo agio. Non c'è nessun obbligo di continuare."
+    answer: "Il primo colloquio serve anche a questo.\n\nNon si tratta di trovare le risposte giuste. Si tratta di sentire.\n\nSentirsi accolti. Ascoltati. Visti per quello che si è, senza dover cambiare nulla.\n\nE sentire, forse, che c'è uno spazio in cui vale la pena tornare."
   },
   {
     question: "Cosa succede se non mi sento a mio agio con il terapeuta?",

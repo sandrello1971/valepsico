@@ -26,9 +26,6 @@ const ChiSono = () => {
         {/* Page Header */}
         <header className="text-center mb-16 animate-fade-up">
           <h1 className="text-section-title mb-4">Psicologa, Psicoterapeuta, Ricercatrice</h1>
-          <p className="text-2xl text-muted-foreground max-w-2xl mx-auto italic font-serif">
-            Valentina Rita Andolfi
-          </p>
         </header>
 
         {/* La mia storia */}
@@ -51,10 +48,10 @@ const ChiSono = () => {
                 Il mio incontro con la psicologia nasce presto, da una storia che mi ha profondamente segnata.
               </p>
               <p>
-                Da ragazza lessi un libro che raccontava di una bambina che, nonostante una vita difficile, riusc&igrave; a cambiare grazie all'incontro con una persona capace di comprenderla davvero.
+                Da ragazza lessi un libro che raccontava di una bambina che, nonostante una vita difficile, riuscì a cambiare grazie all'incontro con una persona capace di comprenderla davvero.
               </p>
               <p>
-                Quella storia mi fece intuire qualcosa che da allora guida il mio lavoro: <strong>un incontro pu&ograve; cambiare una vita.</strong>
+                Quella storia mi fece intuire qualcosa che da allora guida il mio lavoro: <strong>un incontro può cambiare una vita.</strong>
               </p>
             </div>
           </div>
@@ -66,60 +63,65 @@ const ChiSono = () => {
             <h2 className="text-card-title text-primary mb-6">Il senso del mio lavoro</h2>
             <div className="space-y-4 text-lg leading-relaxed">
               <p>
-                Nel tempo questa intuizione &egrave; diventata il centro del mio modo di lavorare.
+                Nel tempo questa intuizione è diventata il centro del mio modo di lavorare.
               </p>
               <p>
                 Credo che la terapia sia prima di tutto un incontro umano, in cui le persone possono ritrovare fiducia, significato e direzione.
               </p>
               <p>
-                Non si tratta solo di &ldquo;risolvere problemi&rdquo;, ma di riattivare risorse interiori che a volte, nei momenti difficili, sembrano non esserci pi&ugrave;.
+                Non si tratta solo di "risolvere problemi", ma di riattivare risorse interiori che a volte, nei momenti difficili, sembrano non esserci più.
               </p>
               <p>
-                &Egrave; da qui che nasce il cambiamento: da uno spazio sicuro in cui poter tornare a s&eacute; stessi.
+                È da qui che nasce il cambiamento: da uno spazio sicuro in cui poter tornare a sé stessi.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Il mio approccio terapeutico */}
+        <Card className="animate-fade-up mb-16">
+          <CardContent className="p-8">
+            <h2 className="text-card-title text-primary mb-6">Il mio approccio terapeutico</h2>
+            <div className="space-y-4 text-lg leading-relaxed">
+              <p>
+                Il mio lavoro si basa sull'Approccio Centrato sulla Persona, sviluppato da Carl Rogers.
+              </p>
+              <p>
+                Per me, però, più che un modello teorico, è un modo di stare nella relazione.
+              </p>
+              <p>
+                Significa che non sei qualcuno da osservare o interpretare dall'esterno,
+                ma una persona che può essere ascoltata mentre prova a comprendersi
+                e accompagnata a riscoprire le proprie risorse.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Cosa accade nel percorso */}
+        <Card className="animate-fade-up mb-16">
+          <CardContent className="p-8">
+            <h2 className="text-card-title text-primary mb-6">Cosa accade nel percorso</h2>
+            <div className="space-y-4 text-lg leading-relaxed">
+              <p>
+                Nel tempo, qualcosa può iniziare a cambiare in modo graduale.
+              </p>
+              <p>A volte le persone iniziano a:</p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> dare un nome a ciò che sentono</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> riconoscere meglio alcune dinamiche</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> sentirsi un po' meno confuse o bloccate</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> tornare a fidarsi di ciò che percepiscono dentro</li>
+              </ul>
+              <p>
+                Non perché diventano qualcun altro, ma perché iniziano a vedersi in modo diverso.
               </p>
             </div>
 
             <blockquote className="mt-8 text-xl italic font-serif text-foreground border-l-4 border-primary pl-6">
-              <p>&ldquo;Esiste un curioso paradosso: quando mi accetto per come sono, allora posso cambiare.&rdquo;</p>
-              <footer className="mt-2 text-lg text-muted-foreground not-italic">&mdash; Carl Rogers</footer>
+              <p>"Esiste un curioso paradosso: quando mi accetto per come sono, allora posso cambiare."</p>
+              <footer className="mt-2 text-lg text-muted-foreground not-italic">— Carl Rogers</footer>
             </blockquote>
-          </CardContent>
-        </Card>
-
-        {/* Formazione */}
-        <Card className="animate-fade-up mb-16">
-          <CardContent className="p-8">
-            <h2 className="text-card-title text-primary mb-6">Formazione</h2>
-            <ul className="space-y-3 text-lg leading-relaxed">
-              <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> Laurea in Psicologia, Empowerment e Benessere &mdash; Universit&agrave; Cattolica di Milano</li>
-              <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> Dottorato di ricerca (PhD) in Psicologia dello Sviluppo e del Benessere (co-tutela con Tufts University, Boston)</li>
-              <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> Specializzazione in Psicoterapia Umanistica &mdash; IACP Milano</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* Valori */}
-        <Card className="animate-fade-up mb-16">
-          <CardContent className="p-8">
-            <h2 className="text-card-title text-primary mb-6 text-center">Valori</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <h4 className="font-semibold text-lg mb-2">Empatia</h4>
-                <p className="text-muted-foreground text-sm">Ascolto profondo e comprensione</p>
-              </div>
-              <div className="text-center">
-                <h4 className="font-semibold text-lg mb-2">Rispetto</h4>
-                <p className="text-muted-foreground text-sm">Attenzione all'unicit&agrave; di ogni persona</p>
-              </div>
-              <div className="text-center">
-                <h4 className="font-semibold text-lg mb-2">Professionalit&agrave;</h4>
-                <p className="text-muted-foreground text-sm">Competenza e aggiornamento continuo</p>
-              </div>
-              <div className="text-center">
-                <h4 className="font-semibold text-lg mb-2">Riservatezza</h4>
-                <p className="text-muted-foreground text-sm">Uno spazio sicuro e protetto</p>
-              </div>
-            </div>
           </CardContent>
         </Card>
 
@@ -132,18 +134,104 @@ const ChiSono = () => {
                 Nel mio lavoro incontro persone che stanno attraversando:
               </p>
               <ul className="space-y-2 ml-4">
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> ansia o stati di tensione</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> difficolt&agrave; nelle relazioni</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> momenti di cambiamento o perdita</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> sensazione di blocco o confusione</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> conflitti o distanza da s&eacute; stessi</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> ansia o stati di tensione</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> difficoltà nelle relazioni</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> momenti di cambiamento o perdita</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> sensazione di blocco o confusione</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> conflitti o distanza da sé stessi</li>
               </ul>
               <p>
-                Non sono etichette. Sono modi diversi in cui pu&ograve; farsi sentire una difficolt&agrave;.
+                Non sono etichette. Sono modi diversi in cui può farsi sentire una difficoltà.
               </p>
             </div>
           </CardContent>
         </Card>
+
+        <div className="mb-16 animate-fade-up">
+          <img
+            src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_41.jpg"
+            alt="Valentina Rita Andolfi nel suo studio"
+            className="w-full aspect-video object-cover rounded-2xl shadow-lg"
+          />
+        </div>
+
+        {/* Formazione */}
+        <Card className="animate-fade-up mb-16">
+          <CardContent className="p-8">
+            <h2 className="text-card-title text-primary mb-6">Formazione</h2>
+            <div className="space-y-4 text-lg leading-relaxed">
+              <p>
+                Il mio percorso è stato un intreccio tra clinica e ricerca.
+              </p>
+              <ul className="space-y-3 ml-4">
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> Laurea in Psicologia, Università Cattolica di Milano</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> Dottorato di ricerca in Psicologia dello Sviluppo e del Benessere (co-tutela Tufts University, Boston)</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> Specializzazione in Psicoterapia Umanistica — IACP Milano</li>
+              </ul>
+              <p>
+                Per me ricerca e lavoro clinico non sono due cose separate.
+              </p>
+              <p>
+                La ricerca mi aiuta a mantenere uno sguardo più ampio, mentre il lavoro clinico
+                mi riporta alla complessità delle storie delle persone.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Valori */}
+        <Card className="animate-fade-up mb-16">
+          <CardContent className="p-8">
+            <h2 className="text-card-title text-primary mb-6">Valori</h2>
+            <div className="space-y-6 text-lg leading-relaxed">
+              <p>
+                Nel mio lavoro cerco di portare alcuni valori che considero fondamentali.
+              </p>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Accoglienza</h3>
+                <p>
+                  Creo uno spazio di comprensione non giudicante, in cui ogni storia
+                  può essere accolta nella sua unicità.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Autenticità</h3>
+                <p>
+                  Mi presento in modo autentico, da persona a persona, unendo
+                  competenza e una relazione professionale ma genuina.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Creatività clinica</h3>
+                <p>
+                  Nel lavoro cerco di mantenere uno sguardo aperto, che
+                  permetta di osservare le situazioni anche da prospettive diverse.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Equilibrio</h3>
+                <p>
+                  Cerco un equilibrio tra teoria e pratica, tra presenza e autonomia,
+                  rispettando i tempi e il ritmo di ogni percorso.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Intro CTA */}
+        <div className="animate-fade-up mb-10">
+          <div className="space-y-4 text-lg leading-relaxed text-foreground">
+            <p>Non sempre si arriva in terapia con chiarezza.</p>
+            <p>
+              A volte si arriva solo con una sensazione: che qualcosa non sta più
+              funzionando come prima.
+            </p>
+            <p>E questo, spesso, è già un punto di partenza.</p>
+            <p>Non serve avere tutto chiaro per iniziare.</p>
+            <p>A volte basta non voler restare soli in quello che si sta vivendo.</p>
+          </div>
+        </div>
 
         {/* CTA */}
         <div className="text-center animate-fade-up">
