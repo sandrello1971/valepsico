@@ -10,7 +10,7 @@ const HomeContent = () => {
       <section className="section-padding bg-background">
         <div className="max-w-3xl mx-auto container-padding">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-8">
-            Può capitare di:
+            Ti riconosci in questo?
           </h2>
           <ul className="space-y-4 text-xl leading-relaxed text-foreground mb-8">
             {[
@@ -106,7 +106,7 @@ const HomeContent = () => {
       <section className="section-padding bg-background">
         <div className="max-w-3xl mx-auto container-padding">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-6">
-            Cosa succede qui
+            Come funziona la psicoterapia
           </h2>
           <div className="space-y-4 text-xl leading-relaxed text-foreground mb-10">
             <p>
@@ -215,7 +215,7 @@ const HomeContent = () => {
           </ul>
           <div className="mt-10">
             <img
-              src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_119.jpg"
+              src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_74.jpg"
               alt="Studio di psicoterapia a Milano"
               className="w-full aspect-video object-cover rounded-2xl shadow-lg"
             />

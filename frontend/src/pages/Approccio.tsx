@@ -33,9 +33,9 @@ const Approccio = () => {
         {/* Foto placeholder */}
         <div className="animate-fade-up">
           <img
-            src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_119.jpg"
-            alt="Studio di psicoterapia"
-            className="w-full aspect-video object-cover rounded-2xl shadow-lg"
+            src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_88.jpg"
+            alt="Valentina Rita Andolfi in ascolto"
+            className="w-full aspect-[3/4] object-cover object-top rounded-2xl shadow-lg"
           />
         </div>
 

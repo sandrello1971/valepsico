@@ -15,6 +15,7 @@ import { publicArticlesRouter, adminArticlesRouter } from './routes/articles';
 import uploadsRoutes from './routes/uploads';
 import sitemapRoutes from './routes/sitemap';
 import { publicImageSlotsRouter, adminImageSlotsRouter } from './routes/imageSlots';
+import contactRoutes from './routes/contact';
 
 const PORT = Number(process.env.PORT || 3001);
 const FRONTEND_URL = process.env.FRONTEND_URL || 'https://valentinaandolfi.it';
@@ -70,6 +71,9 @@ app.use('/api/admin/upload', uploadsRoutes);
 // Image Slots
 app.use('/api/image-slots', publicImageSlotsRouter);
 app.use('/api/admin/image-slots', adminImageSlotsRouter);
+
+// Contact form
+app.use('/api/contact', contactRoutes);
 
 // 404
 app.use('/api', (_req, res) => {

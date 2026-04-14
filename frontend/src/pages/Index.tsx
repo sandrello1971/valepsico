@@ -72,8 +72,8 @@ const Index = () => {
   return (
     <div>
       <SEOHead
-        title="Valentina Rita Andolfi - Psicologa e Psicoterapeuta a Milano e Online"
-        description="Valentina Rita Andolfi, psicologa e psicoterapeuta a Milano e online. Iscritta all'Ordine degli Psicologi della Lombardia n. 17065. Approccio Centrato sulla Persona. Riceve in Piazza Velasca 6, Milano e online."
+        title="Psicoterapeuta Milano | Valentina Andolfi PhD"
+        description="Psicologa e psicoterapeuta a Milano e online. Approccio centrato sulla persona. Riceve in Piazza Velasca 6 e online. Prenota un primo colloquio."
         path="/"
         jsonLd={[localBusinessJsonLd, personJsonLd]}
       />

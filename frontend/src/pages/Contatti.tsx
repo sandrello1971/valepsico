@@ -45,11 +45,16 @@ const Contatti = () => {
     try {
       const validatedData = contactSchema.parse(formData);
 
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(validatedData)
+      });
+
+      if (!response.ok) throw new Error('Errore invio');
 
       toast({
-        title: "Messaggio inviato con successo!",
-        description: "Mi prenderò cura della tua richiesta e ti risponderò al più presto.",
+        title: "Messaggio inviato. Ti risponderò entro 24–48 ore.",
       });
 
       setFormData({

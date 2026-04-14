@@ -32,10 +32,9 @@ const ChiSono = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           <div className="animate-fade-up">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary rounded-2xl transform rotate-2"></div>
               <img
-                src={valentinaPhoto}
-                alt="Valentina Rita Andolfi"
+                src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_41.jpg"
+                alt="Valentina Rita Andolfi nel suo studio"
                 className="relative rounded-2xl shadow-xl w-full"
               />
             </div>
