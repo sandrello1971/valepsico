@@ -15,21 +15,28 @@ const Hero = () => {
                 Dott.ssa Valentina Rita Andolfi
               </span>
               <span className="block text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-2">
-                Psicologa &bull; Psicoterapeuta &bull; Ricercatrice
+                Psicologa e Psicoterapeuta
               </span>
               <span className="block text-2xl md:text-3xl font-serif font-bold text-foreground italic">
-                Milano e online
+                a Milano e online
               </span>
             </h1>
 
             <div className="space-y-6 text-xl leading-relaxed text-foreground mb-8 max-w-2xl">
-              <p className="text-2xl font-medium">
-                <strong>Non hai bisogno di diventare qualcun altro per stare meglio.<br />
-                Hai bisogno di uno spazio in cui poter essere te stesso, fino in fondo.</strong>
+              <p>
+                Ti &egrave; mai capitato di sentirti bloccato, come se ci fosse qualcosa dentro di te che vorresti capire, ma non sai da dove iniziare?
               </p>
-
-              <p className="text-xl">
-                Quando smetti di riconoscerti, pu&ograve; essere il momento di iniziare a ritrovarti.
+              <p>
+                A volte non &egrave; chiaro. Ma si sente.
+              </p>
+              <p>
+                Nei pensieri che tornano, nelle relazioni che fanno pi&ugrave; fatica, o in una distanza sottile da s&eacute; stessi.
+              </p>
+              <p>
+                E si continua ad andare avanti, anche quando qualcosa dentro chiede di fermarsi.
+              </p>
+              <p>
+                Non &egrave; necessario avere tutto chiaro per iniziare. Possiamo partire da qui: da uno spazio in cui poterti ascoltare, fino in fondo.
               </p>
             </div>
 

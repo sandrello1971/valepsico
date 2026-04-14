@@ -88,7 +88,7 @@ const CookiePolicy = () => {
             <h2 className="text-2xl font-semibold text-foreground">5. Diritti dell'Utente</h2>
             <p className="text-muted-foreground">
               L'utente può esercitare i diritti previsti dagli artt. 15-22 del GDPR contattando il Titolare del trattamento 
-              all'indirizzo email: <a href="mailto:info@valentinaritandolfi.it" className="text-primary hover:underline">info@valentinaritandolfi.it</a>.
+              all'indirizzo email: <a href="mailto:info@valentinaandolfi.it" className="text-primary hover:underline">info@valentinaandolfi.it</a>.
             </p>
           </section>
 

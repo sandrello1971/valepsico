@@ -25,9 +25,9 @@ const ChiSono = () => {
       <div className="max-w-4xl mx-auto container-padding">
         {/* Page Header */}
         <header className="text-center mb-16 animate-fade-up">
-          <h1 className="text-section-title mb-4">Chi sono</h1>
+          <h1 className="text-section-title mb-4">Psicologa, Psicoterapeuta, Ricercatrice</h1>
           <p className="text-2xl text-muted-foreground max-w-2xl mx-auto italic font-serif">
-            Psicologa, Psicoterapeuta, Ricercatrice
+            Valentina Rita Andolfi
           </p>
         </header>
 
@@ -48,47 +48,40 @@ const ChiSono = () => {
             <h2 className="text-card-title text-primary">La mia storia</h2>
             <div className="space-y-4 text-lg leading-relaxed">
               <p>
-                Il mio incontro con la psicologia nasce presto, da una storia che mi ha profondamente colpita: quella di una bambina che, grazie alla relazione con qualcuno capace di comprenderla davvero, &egrave; riuscita a trasformare la propria vita.
+                Il mio incontro con la psicologia nasce presto, da una storia che mi ha profondamente segnata.
               </p>
               <p>
-                Da allora ho sentito con chiarezza quanto <strong>un incontro possa trasformare una vita.</strong>
+                Da ragazza lessi un libro che raccontava di una bambina che, nonostante una vita difficile, riusc&igrave; a cambiare grazie all'incontro con una persona capace di comprenderla davvero.
               </p>
               <p>
-                Nel tempo, questa intuizione &egrave; diventata il cuore del mio lavoro: <strong>la relazione come spazio in cui &egrave; possibile ritrovarsi.</strong>
+                Quella storia mi fece intuire qualcosa che da allora guida il mio lavoro: <strong>un incontro pu&ograve; cambiare una vita.</strong>
               </p>
             </div>
           </div>
         </div>
 
-        {/* Il mio approccio e il mio modo di lavorare */}
+        {/* Il senso del mio lavoro */}
         <Card className="animate-fade-up mb-16">
           <CardContent className="p-8">
-            <h2 className="text-card-title text-primary mb-6">Il mio approccio e il mio modo di lavorare</h2>
+            <h2 className="text-card-title text-primary mb-6">Il senso del mio lavoro</h2>
             <div className="space-y-4 text-lg leading-relaxed">
               <p>
-                Il mio lavoro si basa sull'<strong>Approccio Centrato sulla Persona</strong>, che mette al centro <strong>la tua esperienza, il tuo modo di sentire e il tuo ritmo</strong>.
+                Nel tempo questa intuizione &egrave; diventata il centro del mio modo di lavorare.
               </p>
               <p>
-                Credo che ogni persona possieda risorse profonde che, in alcuni momenti della vita, possono sembrare lontane o difficili da raggiungere.
-              </p>
-              <p>Per questo creo uno spazio in cui tu possa:</p>
-              <ul className="space-y-2 ml-4">
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> sentirti <strong>accolto senza giudizio</strong></li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> esplorare <strong>pensieri ed emozioni</strong> anche complessi</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> dare <strong>significato</strong> a ci&ograve; che stai vivendo</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> <strong>ritrovare un contatto</strong> pi&ugrave; autentico con te stesso</li>
-              </ul>
-              <p>
-                Nel percorso non sei &ldquo;analizzato&rdquo;, ma <strong>ascoltato e compreso</strong>.
+                Credo che la terapia sia prima di tutto un incontro umano, in cui le persone possono ritrovare fiducia, significato e direzione.
               </p>
               <p>
-                <strong>Il cambiamento non nasce da una risposta giusta, ma da un incontro che permette di vedersi in modo nuovo.</strong>
+                Non si tratta solo di &ldquo;risolvere problemi&rdquo;, ma di riattivare risorse interiori che a volte, nei momenti difficili, sembrano non esserci pi&ugrave;.
+              </p>
+              <p>
+                &Egrave; da qui che nasce il cambiamento: da uno spazio sicuro in cui poter tornare a s&eacute; stessi.
               </p>
             </div>
 
             <blockquote className="mt-8 text-xl italic font-serif text-foreground border-l-4 border-primary pl-6">
-              <p>&ldquo;Il vero viaggio di scoperta non consiste nel cercare nuove terre, ma nell'avere nuovi occhi.&rdquo;</p>
-              <footer className="mt-2 text-lg text-muted-foreground not-italic">&mdash; Marcel Proust</footer>
+              <p>&ldquo;Esiste un curioso paradosso: quando mi accetto per come sono, allora posso cambiare.&rdquo;</p>
+              <footer className="mt-2 text-lg text-muted-foreground not-italic">&mdash; Carl Rogers</footer>
             </blockquote>
           </CardContent>
         </Card>
@@ -130,38 +123,25 @@ const ChiSono = () => {
           </CardContent>
         </Card>
 
-        {/* Approccio approfondimento */}
+        {/* Di cosa mi occupo */}
         <Card className="animate-fade-up mb-16 bg-gradient-hero">
           <CardContent className="p-8">
-            <h2 className="text-card-title text-primary mb-6">Approccio</h2>
+            <h2 className="text-card-title text-primary mb-6">Di cosa mi occupo</h2>
             <div className="space-y-4 text-lg leading-relaxed">
               <p>
-                Il mio lavoro si basa sull'<strong>Approccio Centrato sulla Persona</strong>.
+                Nel mio lavoro incontro persone che stanno attraversando:
               </p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> ansia o stati di tensione</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> difficolt&agrave; nelle relazioni</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> momenti di cambiamento o perdita</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> sensazione di blocco o confusione</li>
+                <li className="flex items-start gap-2"><span className="text-primary font-bold">&bull;</span> conflitti o distanza da s&eacute; stessi</li>
+              </ul>
               <p>
-                Al centro ci sei tu: <strong>il tuo modo di sentire, la tua esperienza, il tuo ritmo</strong>.
-              </p>
-              <p>
-                Creo uno spazio sicuro, in cui puoi esplorare pensieri, emozioni e vissuti anche complessi, senza giudizio.
-              </p>
-              <p>
-                Credo profondamente che ogni persona abbia dentro di s&eacute; le risorse per affrontare le difficolt&agrave;.
-              </p>
-              <p>
-                <strong>Il mio ruolo &egrave; accompagnarti nel riconoscerle e renderle accessibili.</strong>
-              </p>
-              <p>
-                Questo significa che al centro del percorso ci sei tu. Credo che le risorse non debbano essere costruite, ma riconosciute. Sono gi&agrave; dentro di te.
-              </p>
-              <p>
-                Il cambiamento nasce da un incontro che permette di vedersi in modo nuovo.
+                Non sono etichette. Sono modi diversi in cui pu&ograve; farsi sentire una difficolt&agrave;.
               </p>
             </div>
-
-            <blockquote className="mt-8 text-xl italic font-serif text-foreground border-l-4 border-primary pl-6">
-              <p>&ldquo;&Egrave; nel momento in cui mi accetto cos&igrave; come sono che divento capace di cambiare.&rdquo;</p>
-              <footer className="mt-2 text-lg text-muted-foreground not-italic">&mdash; Carl Rogers</footer>
-            </blockquote>
           </CardContent>
         </Card>
 

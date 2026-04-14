@@ -91,7 +91,7 @@ const Contatti = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "info@valentinaritandolfi.it",
+      details: "info@valentinaandolfi.it",
       description: "Scrivimi per qualsiasi informazione"
     },
     {
@@ -103,7 +103,13 @@ const Contatti = () => {
     {
       icon: MapPin,
       title: "Buccinasco",
-      details: "Centro Persona, via degli Aceri 2",
+      details: "Centro Persona, Via degli Aceri 2",
+      description: ""
+    },
+    {
+      icon: MapPin,
+      title: "Online",
+      details: "Sedute a distanza",
       description: ""
     }
   ];
@@ -120,7 +126,10 @@ const Contatti = () => {
         <header className="text-center mb-16 animate-fade-up">
           <h1 className="text-section-title mb-6">Contattami</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Puoi contattarmi per informazioni o per prenotare un primo colloquio.
+            Se senti che &egrave; il momento di iniziare un percorso o vuoi semplicemente avere pi&ugrave; informazioni, puoi scrivermi qui.
+          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-3">
+            Ti risponder&ograve; personalmente.
           </p>
         </header>
 
@@ -130,6 +139,12 @@ const Contatti = () => {
             <CardContent className="p-8">
               <div className="mb-8">
                 <h2 className="text-card-title mb-4">Scrivimi</h2>
+                <p className="text-muted-foreground">
+                  Il primo messaggio non deve essere &ldquo;perfetto&rdquo;. Pu&ograve; essere anche solo una sensazione, una domanda o un dubbio.
+                </p>
+                <p className="text-muted-foreground mt-3">
+                  Ogni percorso inizia da qui.
+                </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
@@ -210,7 +225,7 @@ const Contatti = () => {
                     name="messaggio"
                     value={formData.messaggio}
                     onChange={handleInputChange}
-                    placeholder="Raccontami brevemente il motivo per cui mi stai contattando..."
+                    placeholder="Raccontami liberamente cosa ti ha portato qui e cosa stai cercando in questo momento."
                     className={`min-h-[120px] ${errors.messaggio ? "border-destructive" : ""}`}
                     aria-invalid={!!errors.messaggio}
                     aria-describedby={errors.messaggio ? "messaggio-error" : undefined}
@@ -228,7 +243,7 @@ const Contatti = () => {
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
-                  Mi prender&ograve; cura della tua richiesta e ti risponder&ograve; al pi&ugrave; presto.
+                  Mi prender&ograve; cura della tua richiesta e ti risponder&ograve; personalmente. Di solito rispondo entro 24&ndash;48 ore.
                 </p>
 
                 <p className="text-xs text-muted-foreground text-center">
@@ -241,12 +256,18 @@ const Contatti = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            {/* WhatsApp CTA */}
+            {/* Contatto diretto */}
             <Card className="animate-fade-up bg-gradient-hero">
               <CardContent className="p-8 text-center">
-                <h3 className="text-card-title mb-4">Scrivimi su WhatsApp</h3>
+                <h3 className="text-card-title mb-4">Preferisci un contatto pi&ugrave; diretto?</h3>
+                <p className="text-muted-foreground mb-2">
+                  WhatsApp: 346 6051282
+                </p>
+                <p className="text-sm text-muted-foreground mb-4 italic">
+                  (Puoi scrivermi anche solo per capire se questo percorso &egrave; adatto a te.)
+                </p>
                 <p className="text-muted-foreground mb-6">
-                  Puoi contattarmi direttamente su WhatsApp per informazioni o per prenotare un primo colloquio.
+                  Email: info@valentinaandolfi.it
                 </p>
                 <div className="space-y-3">
                   <Button asChild className="w-full btn-primary">

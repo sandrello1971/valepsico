@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="space-y-2">
               <h4 className="font-medium text-foreground">Contatti</h4>
-              <p className="text-sm text-muted-foreground">info@valentinaritandolfi.it</p>
+              <p className="text-sm text-muted-foreground">info@valentinaandolfi.it</p>
               <div className="flex gap-3 pt-2">
                 <a href="#" className="text-primary hover:text-accent transition-colors p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded" aria-label="Seguici su Facebook">
                   <Facebook className="w-5 h-5" aria-hidden="true" />
@@ -40,11 +40,11 @@ const Footer = () => {
               <Link to="/chi-sono" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
                 Chi sono
               </Link>
-              <Link to="/servizi" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
-                Servizi
+              <Link to="/percorsi" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
+                Percorsi
               </Link>
-              <Link to="/blog" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
-                Blog
+              <Link to="/approccio" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
+                Approccio
               </Link>
               <Link to="/contatti" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
                 Contatti
@@ -54,11 +54,11 @@ const Footer = () => {
 
           {/* Additional Info */}
           <div className="space-y-4">
-            <h4 className="font-medium text-foreground">Dove ricevo</h4>
+            <h4 className="font-medium text-foreground">Informazioni</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Milano &mdash; Studio Velasca, Piazza Velasca 6</p>
-              <p>Buccinasco &mdash; Centro Persona, via degli Aceri 2</p>
-              <p>Online, quando necessario</p>
+              <p>Milano e Online</p>
+              <p>Studio Velasca, Piazza Velasca 6 &ndash; Milano</p>
+              <p>Centro Persona, Via degli Aceri 2 &ndash; Buccinasco</p>
             </div>
             <div className="mt-4">
               <h4 className="font-medium text-foreground">Contatti</h4>
@@ -81,6 +81,9 @@ const Footer = () => {
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Valentina Rita Andolfi. Tutti i diritti riservati.
+          </p>
+          <p className="text-xs text-muted-foreground max-w-3xl mx-auto">
+            Iscritta all'Ordine degli Psicologi della Lombardia n. 17065 &middot; Le prestazioni psicologiche sono detraibili fiscalmente al 19%.
           </p>
         </div>
       </div>

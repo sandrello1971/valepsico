@@ -9,6 +9,7 @@ import CookieBanner from "@/components/CookieBanner";
 import Index from "./pages/Index";
 import ChiSono from "./pages/ChiSono";
 import Servizi from "./pages/Servizi";
+import Approccio from "./pages/Approccio";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import Contatti from "./pages/Contatti";
@@ -31,7 +32,9 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/chi-sono" element={<ChiSono />} />
               <Route path="/servizi" element={<Servizi />} />
-              
+              <Route path="/percorsi" element={<Servizi />} />
+              <Route path="/approccio" element={<Approccio />} />
+
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogArticle />} />
               <Route path="/contatti" element={<Contatti />} />
