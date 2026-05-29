@@ -47,8 +47,8 @@ const HomeContent = () => {
         <div className="max-w-4xl mx-auto container-padding">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
             <img
-              src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_66.jpg"
-              alt="Valentina Rita Andolfi, psicologa e psicoterapeuta"
+              src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_56.jpg"
+              alt="Valentina Rita Andolfi in ascolto"
               className="w-full aspect-[3/4] object-cover rounded-2xl shadow-lg"
             />
             <div>
@@ -68,12 +68,6 @@ const HomeContent = () => {
                   Nel tempo ho integrato attività clinica e ricerca tra Italia e Stati Uniti.
                   Questo mi permette di unire uno sguardo rigoroso a un modo di lavorare
                   attento, umano e rispettoso.
-                </p>
-                <p>
-                  Nel mio lavoro incontro persone che si sentono confuse, bloccate,
-                  in difficoltà nelle relazioni o lontane da sé stesse.
-                  Spesso non è immediato capire cosa stia succedendo.
-                  A volte serve uno spazio in cui poterlo guardare insieme.
                 </p>
               </div>
             </div>

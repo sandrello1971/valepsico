@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/Logo_vale.png';
 
 const Footer = () => {
   return (
@@ -83,7 +83,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Valentina Rita Andolfi. Tutti i diritti riservati.
           </p>
           <p className="text-xs text-muted-foreground max-w-3xl mx-auto">
-            Iscritta all'Ordine degli Psicologi della Lombardia n. 17065 &middot; Le prestazioni psicologiche sono detraibili fiscalmente al 19%.
+            Iscritta all'Ordine degli Psicologi della Lombardia n. 17065 &middot; P.IVA 11786230968 &middot; Le prestazioni psicologiche sono detraibili fiscalmente al 19%.
           </p>
         </div>
       </div>

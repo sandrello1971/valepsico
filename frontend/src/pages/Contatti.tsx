@@ -261,7 +261,7 @@ const Contatti = () => {
           <div className="space-y-8">
             <div className="animate-fade-up mb-8">
               <img
-                src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_88.jpg"
+                src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_39.jpg"
                 alt="Valentina Rita Andolfi"
                 className="w-full max-h-64 object-cover rounded-2xl shadow-md"
               />

@@ -124,34 +124,41 @@ const ChiSono = () => {
           </CardContent>
         </Card>
 
-        {/* Di cosa mi occupo */}
-        <Card className="animate-fade-up mb-16 bg-gradient-hero">
-          <CardContent className="p-8">
-            <h2 className="text-card-title text-primary mb-6">Di cosa mi occupo</h2>
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-16 animate-fade-up">
+
+          {/* Testo sinistra */}
+          <div className="space-y-6">
+            <h2 className="text-card-title text-primary">Di cosa mi occupo</h2>
             <div className="space-y-4 text-lg leading-relaxed">
-              <p>
-                Nel mio lavoro incontro persone che stanno attraversando:
-              </p>
-              <ul className="space-y-2 ml-4">
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> ansia o stati di tensione</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> difficoltà nelle relazioni</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> momenti di cambiamento o perdita</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> sensazione di blocco o confusione</li>
-                <li className="flex items-start gap-2"><span className="text-primary font-bold">—</span> conflitti o distanza da sé stessi</li>
+              <p>Nel mio lavoro incontro persone che stanno attraversando:</p>
+              <ul className="space-y-3">
+                {[
+                  "ansia o stati di tensione",
+                  "difficoltà nelle relazioni",
+                  "momenti di cambiamento o perdita",
+                  "sensazione di blocco o confusione",
+                  "conflitti o distanza da sé stessi",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-primary mt-1">—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
-              <p>
-                Non sono etichette. Sono modi diversi in cui può farsi sentire una difficoltà.
+              <p className="text-muted-foreground italic mt-4">
+                Non sono etichette. Sono modi diversi in cui può farsi
+                sentire una difficoltà.
               </p>
             </div>
-          </CardContent>
-        </Card>
+          </div>
 
-        <div className="mb-16 animate-fade-up">
+          {/* Foto destra */}
           <img
-            src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_41.jpg"
+            src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_48.jpg"
             alt="Valentina Rita Andolfi nel suo studio"
-            className="w-full aspect-video object-cover rounded-2xl shadow-lg"
+            className="w-full aspect-[3/4] object-cover object-top rounded-2xl shadow-lg"
           />
+
         </div>
 
         {/* Formazione */}
