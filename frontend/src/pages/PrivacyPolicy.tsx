@@ -4,9 +4,10 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Informativa sulla Privacy - Valentina Rita Andolfi"
-        description="Informativa sulla privacy e trattamento dei dati personali del sito web della Dott.ssa Valentina Rita Andolfi, ai sensi del GDPR."
+        title="Informativa Privacy | Valentina Rita Andolfi"
+        description="Informativa sulla privacy e trattamento dei dati personali ai sensi del GDPR per il sito di Valentina Rita Andolfi, psicologa e psicoterapeuta."
         path="/privacy-policy"
+        noindex
       />
       <div className="max-w-4xl mx-auto container-padding py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Informativa sulla Privacy</h1>

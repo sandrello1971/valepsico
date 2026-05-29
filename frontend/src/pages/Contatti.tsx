@@ -9,6 +9,15 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import { z } from 'zod';
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://valentinaandolfi.it/" },
+    { "@type": "ListItem", "position": 2, "name": "Contatti", "item": "https://valentinaandolfi.it/contatti" }
+  ]
+};
+
 const contactSchema = z.object({
   nome: z.string().trim().min(2, { message: "Il nome deve essere di almeno 2 caratteri" }).max(50, { message: "Il nome non può superare i 50 caratteri" }),
   email: z.string().trim().email({ message: "Inserisci un indirizzo email valido" }).max(255, { message: "L'email non può superare i 255 caratteri" }),
@@ -122,9 +131,10 @@ const Contatti = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Contatti - Prenota un Primo Colloquio | Psicologa Milano"
-        description="Contatta la Dott.ssa Valentina Andolfi per prenotare un primo colloquio. Studio a Milano (Piazza Velasca 6), Buccinasco e sedute online."
+        title="Contatti e Primo Colloquio | Valentina Rita Andolfi — Psicologa a Milano"
+        description="Contatta la Dott.ssa Valentina Rita Andolfi per un primo colloquio. Studio in Piazza Velasca 6 a Milano, Buccinasco e sedute online. Risposta in 24-48h."
         path="/contatti"
+        jsonLd={breadcrumbJsonLd}
       />
       <div className="max-w-6xl mx-auto container-padding">
         {/* Page Header */}

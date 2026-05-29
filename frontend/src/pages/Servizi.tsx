@@ -17,8 +17,8 @@ const Servizi = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Percorsi – Dott.ssa Valentina Rita Andolfi, Psicologa e Psicoterapeuta Milano"
-        description="Percorsi individuali, di coppia, per giovani adulti e gruppi di incontro. Psicoterapeuta a Milano e online. Approccio centrato sulla persona."
+        title="Percorsi di Psicoterapia | Valentina Rita Andolfi — Psicologa a Milano"
+        description="Psicoterapia individuale, di coppia, per giovani adulti e gruppi di incontro. A Milano (Piazza Velasca) e online. Approccio centrato sulla persona."
         path="/percorsi"
         jsonLd={[breadcrumbJsonLd, faqJsonLd]}
       />

@@ -4,9 +4,10 @@ const CookiePolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Cookie Policy - Valentina Rita Andolfi"
-        description="Cookie Policy del sito web della Dott.ssa Valentina Rita Andolfi. Informazioni sui cookie tecnici e analitici utilizzati."
+        title="Cookie Policy | Valentina Rita Andolfi"
+        description="Cookie Policy del sito di Valentina Rita Andolfi, psicologa e psicoterapeuta. Informazioni sui cookie tecnici e analitici utilizzati."
         path="/cookie-policy"
+        noindex
       />
       <div className="max-w-4xl mx-auto container-padding py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Cookie Policy</h1>

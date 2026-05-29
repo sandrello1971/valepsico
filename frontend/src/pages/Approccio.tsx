@@ -2,13 +2,23 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://valentinaandolfi.it/" },
+    { "@type": "ListItem", "position": 2, "name": "Approccio", "item": "https://valentinaandolfi.it/approccio" }
+  ]
+};
+
 const Approccio = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Il mio approccio – Dott.ssa Valentina Rita Andolfi, Psicoterapeuta Milano"
-        description="L'approccio centrato sulla persona di Valentina Rita Andolfi. Come funziona la psicoterapia, il ruolo della relazione terapeutica e cosa puoi aspettarti dal percorso."
+        title="Approccio Centrato sulla Persona | Valentina Rita Andolfi — Psicologa a Milano"
+        description="L'Approccio Centrato sulla Persona di Carl Rogers nella mia pratica clinica: come si svolge la psicoterapia, ruolo della relazione e cosa aspettarsi dal percorso."
         path="/approccio"
+        jsonLd={breadcrumbJsonLd}
       />
       <div className="max-w-3xl mx-auto container-padding space-y-16">
 

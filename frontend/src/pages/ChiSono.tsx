@@ -17,8 +17,8 @@ const ChiSono = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Chi Sono - Dott.ssa Valentina Rita Andolfi, Psicologa PhD"
-        description="Psicologa, psicoterapeuta e ricercatrice a Milano. Laureata in Psicologia, Dottorato alla Tufts University di Boston, specializzata in Psicoterapia Umanistica. Approccio centrato sulla persona."
+        title="Chi Sono | Valentina Rita Andolfi — Psicologa a Milano"
+        description="Psicologa, psicoterapeuta e PhD a Milano. Formata alla Cattolica e alla Tufts University di Boston. Specializzazione in Psicoterapia Umanistica IACP."
         path="/chi-sono"
         jsonLd={breadcrumbJsonLd}
       />
