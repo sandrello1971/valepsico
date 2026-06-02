@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold text-foreground">1. Titolare del Trattamento</h2>
             <p className="text-muted-foreground">
               Il Titolare del trattamento dei dati personali è <strong>Dott.ssa Valentina Rita Andolfi</strong>, Psicologa e Psicoterapeuta, 
-              con sede operativa a Milano. Email: <a href="mailto:info@valentinaandolfi.it" className="text-primary hover:underline">info@valentinaandolfi.it</a>.
+              con sede operativa a Buccinasco (Milano). Email: <a href="mailto:info@valentinaandolfi.it" className="text-primary hover:underline">info@valentinaandolfi.it</a>.
             </p>
           </section>
 

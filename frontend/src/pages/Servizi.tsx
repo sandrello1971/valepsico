@@ -17,8 +17,8 @@ const Servizi = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Percorsi di Psicoterapia | Valentina Rita Andolfi — Psicologa a Milano"
-        description="Psicoterapia individuale, di coppia, per giovani adulti e gruppi di incontro. A Milano (Piazza Velasca) e online. Approccio centrato sulla persona."
+        title="Percorsi di Psicoterapia | Valentina Rita Andolfi — Psicologa a Buccinasco"
+        description="Psicoterapia individuale, di coppia, per giovani adulti e gruppi di incontro. A Buccinasco (Milano) e online. Approccio centrato sulla persona."
         path="/percorsi"
         jsonLd={[breadcrumbJsonLd, faqJsonLd]}
       />
@@ -28,7 +28,7 @@ const Servizi = () => {
         <header className="animate-fade-up">
           <h1 className="text-section-title mb-6">Percorsi</h1>
           <p className="text-xl text-muted-foreground italic">
-            Psicologa e Psicoterapeuta a Milano e online
+            Psicologa e Psicoterapeuta a Buccinasco (Milano) e online
           </p>
         </header>
 
@@ -126,6 +126,8 @@ const Servizi = () => {
                 <div className="mt-4">
                   <img
                     src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_101.jpg"
+                    loading="lazy"
+                    decoding="async"
                     alt="Gruppo di incontro terapeutico"
                     className="w-full aspect-video object-cover rounded-xl shadow-md"
                   />
@@ -149,7 +151,7 @@ const Servizi = () => {
             </p>
             <p>
               Insieme iniziamo a dare una direzione al percorso:
-              obiettivi, tempi, frequenza e modalità (in studio a Milano o online).
+              obiettivi, tempi, frequenza e modalità (in studio a Buccinasco o online).
             </p>
             <p>
               Non è un impegno rigido,

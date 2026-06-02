@@ -5,9 +5,15 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Star } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import { z } from 'zod';
+
+// Scheda Google Business Profile (Centro Persona, Buccinasco).
+// NB: per il pulsante "Lascia una recensione" sostituire, quando disponibile, con
+// il link diretto alle recensioni (https://g.page/r/…/review oppure
+// https://search.google.com/local/writereview?placeid=…). Vedi GOOGLE_BUSINESS_URL in src/pages/Index.tsx.
+const GOOGLE_BUSINESS_URL = "https://www.google.com/search?q=Dott.ssa+Valentina+Rita+Andolfi+Psicoterapeuta";
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
@@ -110,13 +116,7 @@ const Contatti = () => {
     },
     {
       icon: MapPin,
-      title: "Milano",
-      details: "Studio Velasca, Piazza Velasca 6",
-      description: ""
-    },
-    {
-      icon: MapPin,
-      title: "Buccinasco",
+      title: "Buccinasco (Milano)",
       details: "Centro Persona, Via degli Aceri 2",
       description: ""
     },
@@ -131,8 +131,8 @@ const Contatti = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Contatti e Primo Colloquio | Valentina Rita Andolfi — Psicologa a Milano"
-        description="Contatta la Dott.ssa Valentina Rita Andolfi per un primo colloquio. Studio in Piazza Velasca 6 a Milano, Buccinasco e sedute online. Risposta in 24-48h."
+        title="Contatti e Primo Colloquio | Valentina Rita Andolfi — Psicologa a Buccinasco"
+        description="Contatta la Dott.ssa Valentina Rita Andolfi per un primo colloquio. Studio in Via degli Aceri 2 a Buccinasco (Milano) e sedute online. Risposta in 24-48h."
         path="/contatti"
         jsonLd={breadcrumbJsonLd}
       />
@@ -272,6 +272,8 @@ const Contatti = () => {
             <div className="animate-fade-up mb-8">
               <img
                 src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_39.jpg"
+                loading="lazy"
+                decoding="async"
                 alt="Valentina Rita Andolfi"
                 className="w-full max-h-64 object-cover rounded-2xl shadow-md"
               />
@@ -297,6 +299,12 @@ const Contatti = () => {
                     <a href="https://wa.me/393466051282">
                       <Phone className="mr-2 h-4 w-4" />
                       WhatsApp: 346 6051282
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full">
+                    <a href={GOOGLE_BUSINESS_URL} target="_blank" rel="noopener noreferrer">
+                      <Star className="mr-2 h-4 w-4" />
+                      Trovaci su Google / Lascia una recensione
                     </a>
                   </Button>
                 </div>

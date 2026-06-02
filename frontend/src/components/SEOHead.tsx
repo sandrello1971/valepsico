@@ -13,7 +13,7 @@ interface SEOHeadProps {
 
 const SITE_URL = 'https://valentinaandolfi.it';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
-const DEFAULT_OG_ALT = 'Dott.ssa Valentina Rita Andolfi, psicologa e psicoterapeuta a Milano';
+const DEFAULT_OG_ALT = 'Dott.ssa Valentina Rita Andolfi, psicologa e psicoterapeuta a Buccinasco (Milano)';
 
 const SEOHead = ({
   title,

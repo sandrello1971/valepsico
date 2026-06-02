@@ -35,6 +35,104 @@ async function jsonFetch<T>(path: string): Promise<T> {
   return res.json();
 }
 
+// ============================================================
+// BOOKING
+// ============================================================
+
+export interface BookingSettings {
+  slot_minutes: number;
+  deposit_cents: number;
+  currency: string;
+  min_notice_hours: number;
+  max_days_ahead: number;
+  timezone: string;
+}
+
+export interface AvailabilitySlot {
+  startUtc: string;
+  endUtc: string;
+  label: string; // 'HH:MM' Europe/Rome
+}
+
+export interface AvailabilityResponse {
+  date: string;
+  slots: AvailabilitySlot[];
+}
+
+export type DayStatus = 'free' | 'partial' | 'full' | 'closed';
+
+export interface DaySummary {
+  date: string;
+  status: DayStatus;
+}
+
+export interface AvailabilitySummaryResponse {
+  from: string;
+  to: string;
+  days: DaySummary[];
+}
+
+export interface CreateBookingInput {
+  start_at: string;
+  end_at: string;
+  client_name: string;
+  client_email: string;
+  client_phone: string;
+  notes?: string;
+  modality: 'presenza' | 'online';
+  privacy_consent: true;
+}
+
+export interface CreateBookingResponse {
+  booking_id: number;
+  session_id: string;
+  checkout_url: string;
+}
+
+export interface ConfirmResponse {
+  status: 'pending' | 'confirmed' | 'expired' | 'cancelled';
+  when_local: string;
+  modality: 'presenza' | 'online';
+  client_email: string;
+}
+
+async function jsonPost<T>(path: string, body: unknown): Promise<T> {
+  const res = await fetch(`${API_URL}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ error: res.statusText }));
+    throw new Error(err.error || `Errore ${res.status}`);
+  }
+  return res.json();
+}
+
+export const bookingApi = {
+  settings() {
+    return jsonFetch<BookingSettings>('/api/booking/settings');
+  },
+  availability(date: string) {
+    return jsonFetch<AvailabilityResponse>(
+      `/api/booking/availability?date=${encodeURIComponent(date)}`
+    );
+  },
+  availabilitySummary(from: string, to: string) {
+    return jsonFetch<AvailabilitySummaryResponse>(
+      `/api/booking/availability/summary?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`
+    );
+  },
+  create(input: CreateBookingInput) {
+    return jsonPost<CreateBookingResponse>('/api/booking/create', input);
+  },
+  confirm(sessionId: string) {
+    return jsonFetch<ConfirmResponse>(
+      `/api/booking/confirm?session_id=${encodeURIComponent(sessionId)}`
+    );
+  },
+};
+
 export const blogApi = {
   list(params?: { limit?: number; category?: string }) {
     const qs = new URLSearchParams();

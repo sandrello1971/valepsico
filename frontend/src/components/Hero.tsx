@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import valentinaPhoto from '@/assets/valentina-photo.png';
+import valentinaPhotoSrcSet from '@/assets/valentina-photo.png?format=webp&w=480;640;900&as=srcset';
+import valentinaPhoto from '@/assets/valentina-photo.png?format=webp&w=640';
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
                 Dott.ssa Valentina Rita Andolfi
               </span>
               <span className="block text-2xl md:text-3xl font-serif text-foreground italic">
-                Psicologa e Psicoterapeuta a Milano e online
+                Psicologa e Psicoterapeuta a Buccinasco (Milano) e online
               </span>
             </h1>
 
@@ -54,6 +55,12 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-primary rounded-3xl transform rotate-3"></div>
               <img
                 src={valentinaPhoto}
+                srcSet={valentinaPhotoSrcSet}
+                sizes="(min-width: 1024px) 45vw, 90vw"
+                width={900}
+                height={1151}
+                fetchPriority="high"
+                decoding="async"
                 alt="Valentina Rita Andolfi - Psicologa e Psicoterapeuta"
                 className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto lg:max-w-none"
               />

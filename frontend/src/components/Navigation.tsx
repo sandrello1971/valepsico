@@ -12,6 +12,7 @@ const Navigation = () => {
     { name: 'Percorsi', path: '/percorsi' },
     { name: 'Approccio', path: '/approccio' },
     { name: 'Contatti', path: '/contatti' },
+    { name: 'Prenota', path: '/prenota' },
   ];
 
   const getLinkClass = ({ isActive }: { isActive: boolean }) => 

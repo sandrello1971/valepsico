@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import logo from '@/assets/Logo_vale.png';
 
 const Footer = () => {
@@ -20,10 +20,13 @@ const Footer = () => {
               <h4 className="font-medium text-foreground">Contatti</h4>
               <p className="text-sm text-muted-foreground">info@valentinaandolfi.it</p>
               <div className="flex gap-3 pt-2">
-                <a href="#" className="text-primary hover:text-accent transition-colors p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded" aria-label="Seguici su Facebook">
+                <a href="https://www.linkedin.com/in/valentinaritaandolfi/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded" aria-label="Profilo LinkedIn di Valentina Rita Andolfi">
+                  <Linkedin className="w-5 h-5" aria-hidden="true" />
+                </a>
+                <a href="https://www.facebook.com/valentinaritaandolfi" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded" aria-label="Pagina Facebook di Valentina Rita Andolfi">
                   <Facebook className="w-5 h-5" aria-hidden="true" />
                 </a>
-                <a href="#" className="text-primary hover:text-accent transition-colors p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded" aria-label="Seguici su Instagram">
+                <a href="https://www.instagram.com/valentina.rita.andolfi/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors p-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded" aria-label="Profilo Instagram di Valentina Rita Andolfi">
                   <Instagram className="w-5 h-5" aria-hidden="true" />
                 </a>
               </div>
@@ -56,9 +59,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-medium text-foreground">Informazioni</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Milano e Online</p>
-              <p>Studio Velasca, Piazza Velasca 6 &ndash; Milano</p>
-              <p>Centro Persona, Via degli Aceri 2 &ndash; Buccinasco</p>
+              <p>Buccinasco (Milano) e Online</p>
+              <p>Centro Persona, Via degli Aceri 2 &ndash; Buccinasco (MI)</p>
             </div>
             <div className="mt-4">
               <h4 className="font-medium text-foreground">Contatti</h4>

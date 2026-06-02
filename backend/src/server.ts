@@ -16,6 +16,13 @@ import uploadsRoutes from './routes/uploads';
 import sitemapRoutes from './routes/sitemap';
 import { publicImageSlotsRouter, adminImageSlotsRouter } from './routes/imageSlots';
 import contactRoutes from './routes/contact';
+import {
+  bookingRouter,
+  adminBookingRouter,
+  googleOauthCallbackRouter,
+  runExpireSweep,
+  stripeWebhookHandler,
+} from './routes/booking';
 
 const PORT = Number(process.env.PORT || 3001);
 const FRONTEND_URL = process.env.FRONTEND_URL || 'https://valentinaandolfi.it';
@@ -39,6 +46,15 @@ app.use(
     },
     credentials: true,
   })
+);
+
+// CRITICO: il webhook Stripe deve ricevere il body raw (Buffer) per verificare
+// la firma. Va montato PRIMA del middleware express.json(), altrimenti il body
+// viene già parsato e la verifica della firma fallisce.
+app.post(
+  '/api/booking/webhook',
+  express.raw({ type: 'application/json' }),
+  stripeWebhookHandler
 );
 
 app.use(express.json({ limit: '5mb' }));
@@ -75,6 +91,11 @@ app.use('/api/admin/image-slots', adminImageSlotsRouter);
 // Contact form
 app.use('/api/contact', contactRoutes);
 
+// Booking (il webhook è già montato sopra con express.raw)
+app.use('/api/booking', bookingRouter);
+app.use('/api/booking', googleOauthCallbackRouter); // /google/oauth/callback (no auth)
+app.use('/api/admin/booking', adminBookingRouter);
+
 // 404
 app.use('/api', (_req, res) => {
   res.status(404).json({ error: 'Endpoint non trovato' });
@@ -98,3 +119,9 @@ app.listen(PORT, () => {
   console.log(`[server] FRONTEND_URL: ${FRONTEND_URL}`);
   console.log(`[server] UPLOADS_DIR: ${UPLOADS_DIR}`);
 });
+
+// Cleanup periodico delle prenotazioni 'pending' scadute.
+// Frequenza: ogni 2 minuti. Esegue anche subito all'avvio.
+const EXPIRE_SWEEP_MS = 2 * 60 * 1000;
+runExpireSweep();
+setInterval(runExpireSweep, EXPIRE_SWEEP_MS).unref();

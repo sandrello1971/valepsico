@@ -15,7 +15,7 @@ const Approccio = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Approccio Centrato sulla Persona | Valentina Rita Andolfi — Psicologa a Milano"
+        title="Approccio Centrato sulla Persona | Valentina Rita Andolfi — Psicologa a Buccinasco"
         description="L'Approccio Centrato sulla Persona di Carl Rogers nella mia pratica clinica: come si svolge la psicoterapia, ruolo della relazione e cosa aspettarsi dal percorso."
         path="/approccio"
         jsonLd={breadcrumbJsonLd}
@@ -44,6 +44,8 @@ const Approccio = () => {
         <div className="animate-fade-up">
           <img
             src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_88.jpg"
+            loading="lazy"
+            decoding="async"
             alt="Valentina Rita Andolfi in ascolto"
             className="w-full aspect-[3/4] object-cover object-top rounded-2xl shadow-lg"
           />

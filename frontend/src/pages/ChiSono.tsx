@@ -17,8 +17,8 @@ const ChiSono = () => {
   return (
     <div className="section-padding">
       <SEOHead
-        title="Chi Sono | Valentina Rita Andolfi — Psicologa a Milano"
-        description="Psicologa, psicoterapeuta e PhD a Milano. Formata alla Cattolica e alla Tufts University di Boston. Specializzazione in Psicoterapia Umanistica IACP."
+        title="Chi Sono | Valentina Rita Andolfi — Psicologa a Buccinasco"
+        description="Psicologa, psicoterapeuta e PhD a Buccinasco (Milano). Formata alla Cattolica e alla Tufts University di Boston. Specializzazione in Psicoterapia Umanistica IACP."
         path="/chi-sono"
         jsonLd={breadcrumbJsonLd}
       />
@@ -34,6 +34,8 @@ const ChiSono = () => {
             <div className="relative">
               <img
                 src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_41.jpg"
+                loading="lazy"
+                decoding="async"
                 alt="Valentina Rita Andolfi nel suo studio"
                 className="relative rounded-2xl shadow-xl w-full"
               />
@@ -155,6 +157,8 @@ const ChiSono = () => {
           {/* Foto destra */}
           <img
             src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_48.jpg"
+            loading="lazy"
+            decoding="async"
             alt="Valentina Rita Andolfi nel suo studio"
             className="w-full aspect-[3/4] object-cover object-top rounded-2xl shadow-lg"
           />

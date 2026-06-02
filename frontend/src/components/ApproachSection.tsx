@@ -21,6 +21,8 @@ const ApproachSection = () => {
             <div className="relative">
               <img
                 src={approachImage}
+                loading="lazy"
+                decoding="async"
                 alt="Approccio terapeutico"
                 className="w-full aspect-video object-cover rounded-2xl shadow-elegant"
               />
@@ -178,15 +180,10 @@ const ApproachSection = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8 font-serif text-center">
             Dove ricevo
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div className="text-center p-6">
               <MapPin className="mx-auto text-primary mb-4" size={32} />
-              <h3 className="text-xl font-semibold mb-2">Milano</h3>
-              <p className="text-muted-foreground">Studio Velasca, Piazza Velasca 6</p>
-            </div>
-            <div className="text-center p-6">
-              <MapPin className="mx-auto text-primary mb-4" size={32} />
-              <h3 className="text-xl font-semibold mb-2">Buccinasco</h3>
+              <h3 className="text-xl font-semibold mb-2">Buccinasco (Milano)</h3>
               <p className="text-muted-foreground">Centro Persona, via degli Aceri 2</p>
             </div>
             <div className="text-center p-6">

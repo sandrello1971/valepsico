@@ -18,15 +18,29 @@ const OG_IMAGE = `${SITE}/og-image.jpg`;
 const OG_IMAGE_ALT = 'Dott.ssa Valentina Rita Andolfi, psicologa e psicoterapeuta a Milano';
 const OPL_PROFILE_URL = 'https://www.opl.it/psicologi/17065/Andolfi-Valentina-Rita';
 
+// Scheda Google Business Profile (sede di Buccinasco — Centro Persona).
+// NB: link del pannello informativo Google; quando disponibile sostituire con
+// il link breve stabile della scheda Maps (https://maps.app.goo.gl/… o g.page/…).
+const GOOGLE_BUSINESS_URL =
+  'https://www.google.com/search?q=Dott.ssa+Valentina+Rita+Andolfi+Psicoterapeuta';
+
+// Profili social pubblici (mantenere allineati al Footer — vedi src/components/Footer.tsx)
+const SOCIAL_PROFILES = [
+  'https://www.linkedin.com/in/valentinaritaandolfi/',
+  'https://www.facebook.com/valentinaritaandolfi',
+  'https://www.instagram.com/valentina.rita.andolfi/',
+];
+
 // ---------- JSON-LD condivisi ----------
 
-const studioVelascaJsonLd = {
+// Sede primaria: Centro Persona, Buccinasco (MI). Collegata al profilo Google Business.
+const centroPersonaJsonLd = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'MedicalBusiness'],
-  '@id': `${SITE}/#studio-velasca`,
-  name: 'Studio Velasca — Dott.ssa Valentina Rita Andolfi',
+  '@id': `${SITE}/#centro-persona`,
+  name: 'Centro Persona — Dott.ssa Valentina Rita Andolfi',
   description:
-    'Studio di psicoterapia in centro a Milano, Piazza Velasca 6. Approccio Centrato sulla Persona. Sedute individuali, di coppia e per giovani adulti.',
+    'Studio di psicoterapia a Buccinasco (Milano sud-ovest), Via degli Aceri 2. Approccio Centrato sulla Persona. Sedute individuali, di coppia e per giovani adulti, anche online.',
   url: SITE,
   image: OG_IMAGE,
   logo: `${SITE}/favicon.png`,
@@ -39,14 +53,16 @@ const studioVelascaJsonLd = {
   paymentAccepted: 'Cash, Bonifico bancario',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Piazza Velasca 6',
-    addressLocality: 'Milano',
+    streetAddress: 'Via degli Aceri 2',
+    addressLocality: 'Buccinasco',
     addressRegion: 'Lombardia',
-    postalCode: '20122',
+    postalCode: '20090',
     addressCountry: 'IT',
   },
-  geo: { '@type': 'GeoCoordinates', latitude: 45.4607, longitude: 9.1922 },
+  geo: { '@type': 'GeoCoordinates', latitude: 45.4147, longitude: 9.0843 },
+  hasMap: GOOGLE_BUSINESS_URL,
   areaServed: [
+    { '@type': 'City', name: 'Buccinasco' },
     { '@type': 'City', name: 'Milano' },
     { '@type': 'Country', name: 'Italia' },
   ],
@@ -56,6 +72,7 @@ const studioVelascaJsonLd = {
     opens: '09:00',
     closes: '20:00',
   },
+  sameAs: [...SOCIAL_PROFILES, GOOGLE_BUSINESS_URL],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Percorsi di psicoterapia',
@@ -67,35 +84,6 @@ const studioVelascaJsonLd = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Psicoterapia online', serviceType: 'Online psychotherapy', url: `${SITE}/percorsi` } },
     ],
   },
-};
-
-const centroPersonaJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'MedicalBusiness'],
-  '@id': `${SITE}/#centro-persona`,
-  name: 'Centro Persona — Dott.ssa Valentina Rita Andolfi',
-  description:
-    'Sede di psicoterapia a Buccinasco (Milano sud-ovest), Via degli Aceri 2. Approccio Centrato sulla Persona.',
-  url: SITE,
-  image: OG_IMAGE,
-  telephone: '+393466051282',
-  email: 'info@valentinaandolfi.it',
-  priceRange: '€€',
-  medicalSpecialty: 'Psychotherapy',
-  availableLanguage: ['it'],
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Via degli Aceri 2',
-    addressLocality: 'Buccinasco',
-    addressRegion: 'Lombardia',
-    postalCode: '20090',
-    addressCountry: 'IT',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: 45.4147, longitude: 9.0843 },
-  areaServed: [
-    { '@type': 'City', name: 'Buccinasco' },
-    { '@type': 'City', name: 'Milano' },
-  ],
 };
 
 const personJsonLd = {
@@ -116,7 +104,6 @@ const personJsonLd = {
   nationality: 'IT',
   knowsLanguage: ['it'],
   worksFor: [
-    { '@id': `${SITE}/#studio-velasca` },
     { '@id': `${SITE}/#centro-persona` },
   ],
   memberOf: {
@@ -150,11 +137,7 @@ const personJsonLd = {
     'supporto psicologico per giovani adulti',
     'ansia e momenti di cambiamento',
   ],
-  sameAs: [
-    'https://www.linkedin.com/in/valentina-rita-andolfi-45a80436/',
-    'https://www.facebook.com/valentinaritaandolfi',
-    OPL_PROFILE_URL,
-  ],
+  sameAs: [...SOCIAL_PROFILES, GOOGLE_BUSINESS_URL, OPL_PROFILE_URL],
 };
 
 const breadcrumb = (label, path) => ({
@@ -185,37 +168,37 @@ const faqPageJsonLd = {
 const ROUTES = [
   {
     path: '/',
-    title: 'Psicologa e Psicoterapeuta a Milano | Valentina Rita Andolfi',
+    title: 'Psicologa e Psicoterapeuta a Buccinasco | V. R. Andolfi',
     description:
-      'Dott.ssa Valentina Rita Andolfi, psicologa e psicoterapeuta a Milano (Piazza Velasca) e online. Approccio centrato sulla persona. Prenota un primo colloquio.',
-    jsonLd: [studioVelascaJsonLd, centroPersonaJsonLd, personJsonLd],
+      'Dott.ssa Valentina Rita Andolfi, psicologa e psicoterapeuta a Buccinasco (Milano) e online. Approccio centrato sulla persona. Prenota un primo colloquio.',
+    jsonLd: [centroPersonaJsonLd, personJsonLd],
   },
   {
     path: '/chi-sono',
-    title: 'Chi Sono | Valentina Rita Andolfi — Psicologa a Milano',
+    title: 'Chi Sono | Valentina Rita Andolfi — Psicologa a Buccinasco',
     description:
-      'Psicologa, psicoterapeuta e PhD a Milano. Formata alla Cattolica e alla Tufts University di Boston. Specializzazione in Psicoterapia Umanistica IACP.',
+      'Psicologa, psicoterapeuta e PhD a Buccinasco (Milano). Formata alla Cattolica e alla Tufts University di Boston. Specializzazione in Psicoterapia Umanistica IACP.',
     jsonLd: [breadcrumb('Chi Sono', '/chi-sono')],
   },
   {
     path: '/percorsi',
-    title: 'Percorsi di Psicoterapia | Valentina Rita Andolfi — Psicologa a Milano',
+    title: 'Percorsi di Psicoterapia | Valentina Rita Andolfi — Psicologa a Buccinasco',
     description:
-      'Psicoterapia individuale, di coppia, per giovani adulti e gruppi di incontro. A Milano (Piazza Velasca) e online. Approccio centrato sulla persona.',
+      'Psicoterapia individuale, di coppia, per giovani adulti e gruppi di incontro. A Buccinasco (Milano) e online. Approccio centrato sulla persona.',
     jsonLd: [breadcrumb('Percorsi', '/percorsi'), faqPageJsonLd],
   },
   {
     path: '/approccio',
-    title: 'Approccio Centrato sulla Persona | Valentina Rita Andolfi — Psicologa a Milano',
+    title: 'Approccio Centrato sulla Persona | Valentina Rita Andolfi — Psicologa a Buccinasco',
     description:
       "L'Approccio Centrato sulla Persona di Carl Rogers nella mia pratica clinica: come si svolge la psicoterapia, ruolo della relazione e cosa aspettarsi dal percorso.",
     jsonLd: [breadcrumb('Approccio', '/approccio')],
   },
   {
     path: '/contatti',
-    title: 'Contatti e Primo Colloquio | Valentina Rita Andolfi — Psicologa a Milano',
+    title: 'Contatti e Primo Colloquio | Valentina Rita Andolfi — Psicologa a Buccinasco',
     description:
-      'Contatta la Dott.ssa Valentina Rita Andolfi per un primo colloquio. Studio in Piazza Velasca 6 a Milano, Buccinasco e sedute online. Risposta in 24-48h.',
+      'Contatta la Dott.ssa Valentina Rita Andolfi per un primo colloquio. Studio in Via degli Aceri 2 a Buccinasco (Milano) e sedute online. Risposta in 24-48h.',
     jsonLd: [breadcrumb('Contatti', '/contatti')],
   },
   {

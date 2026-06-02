@@ -48,6 +48,8 @@ const HomeContent = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
             <img
               src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_56.jpg"
+              loading="lazy"
+              decoding="async"
               alt="Valentina Rita Andolfi in ascolto"
               className="w-full aspect-[3/4] object-cover rounded-2xl shadow-lg"
             />
@@ -62,7 +64,7 @@ const HomeContent = () => {
                   iscritta all'Ordine degli Psicologi della Lombardia n. 17065.
                 </p>
                 <p>
-                  Lavoro a Milano e online con adolescenti, adulti, coppie e gruppi.
+                  Lavoro a Buccinasco (Milano) e online con adolescenti, adulti, coppie e gruppi.
                 </p>
                 <p>
                   Nel tempo ho integrato attività clinica e ricerca tra Italia e Stati Uniti.
@@ -143,6 +145,8 @@ const HomeContent = () => {
           <div className="animate-fade-up mb-8">
             <img
               src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_113.jpg"
+              loading="lazy"
+              decoding="async"
               alt="Citazione Anaïs Nin scritta a mano"
               className="w-full max-w-sm mx-auto aspect-[4/3] object-cover rounded-2xl shadow-md"
             />
@@ -195,8 +199,7 @@ const HomeContent = () => {
           </h2>
           <ul className="space-y-4 text-xl text-foreground">
             {[
-              { luogo: "Milano", dettaglio: "Studio Velasca, Piazza Velasca 6" },
-              { luogo: "Buccinasco", dettaglio: "Centro Persona, Via degli Aceri 2" },
+              { luogo: "Buccinasco (Milano)", dettaglio: "Centro Persona, Via degli Aceri 2" },
               { luogo: "Online", dettaglio: "videochiamata, su appuntamento" },
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
@@ -210,7 +213,9 @@ const HomeContent = () => {
           <div className="mt-10">
             <img
               src="https://valentinaandolfi.it/foto-review/NDRSFN_29092024_74.jpg"
-              alt="Studio di psicoterapia a Milano"
+              loading="lazy"
+              decoding="async"
+              alt="Studio di psicoterapia a Buccinasco, Milano"
               className="w-full aspect-video object-cover rounded-2xl shadow-lg"
             />
           </div>
